@@ -1,0 +1,20 @@
+{
+	"name": "innoweb/silverstripe-fluent-rtl-support",
+	"description": "Adds RTL support to CMS fields of sites that use fluent.",
+	"type": "silverstripe-module",
+	"license": "BSD-3-Clause",
+	"keywords": ["silverstripe", "fluent", "rtl", "cms", "language", "translation", "arabic"],
+	"authors": [{
+		"name": "Florian Thoma",
+		"homepage": "http://www.innoweb.com.au"
+	}],
+	"require":
+	{
+		"silverstripe/framework": "~3.2",
+		"silverstripe/cms": "~3.2",
+		"tractorcow/silverstripe-fluent": "~3.8"
+	},
+	"extra": {
+		"installer-name": "fluent-rtl-support"
+	}
+}

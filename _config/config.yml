@@ -1,0 +1,6 @@
+---
+Name: fluentrtlsupport
+---
+LeftAndMain:
+  extensions:
+    - FluentRTLLeftAndMain
