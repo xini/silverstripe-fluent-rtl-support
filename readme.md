@@ -5,7 +5,7 @@
 
 ## Overview
 
-Adds RTL support to CMS fields of sites that use [fluent](https://packagist.org/packages/tractorcow/silverstripe-fluent).
+Adds [right-to-left writing](https://en.wikipedia.org/wiki/Right-to-left) support to CMS fields of sites that use [fluent](https://packagist.org/packages/tractorcow/silverstripe-fluent).
 
 This is very early stages and only changes the direction of text fields. PRs welcome!
 
