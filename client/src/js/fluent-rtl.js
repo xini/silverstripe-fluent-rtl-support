@@ -1,14 +1,38 @@
 (function($) {
 	$.entwine('ss', function($) {
 		
+		var fluentRTLConfig = function() {
+			var section = 'SilverStripe\\Admin\\LeftAndMain';
+			if (window
+				&& window.ss
+			    && window.ss.config
+			    && window.ss.config.sections
+			) {
+				var config = window.ss.config.sections.find(function (next) {
+					return next.name === section;
+				});
+			    if (config) {
+			    	return config.fluentrtl || {};
+			    }
+			}
+			return {};
+		};		
+		
 		var setDirectionForLocale = function() {
-			var locale = $.cookie('FluentLocale_CMS');
-			if (typeof locale != 'undefined') {
+			var currentLocale = $.cookie('FluentLocale_CMS');
+			if (typeof currentLocale != 'undefined') {
+				var config = fluentRTLConfig();
+				// Skip if no locales defined
+				if (typeof config.locales === 'undefined' || config.locales.length === 0) {
+					return;
+				}
 				// get direction
 				var dir = 'ltr';
-				if (typeof fluentDirections != 'undefined' && locale in fluentDirections) {
-					dir = fluentDirections[locale];
-				}
+				config.locales.forEach(function(locale) {
+					if (locale.code == currentLocale) {
+						dir = locale.dir;
+					}
+				});
 				// set class on html tag
 				$('html').removeClass('ltr').removeClass('rtl').addClass(dir);
 				// update tinymce config

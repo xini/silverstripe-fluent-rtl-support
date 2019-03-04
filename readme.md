@@ -11,8 +11,8 @@ This is very early stages and only changes the direction of text fields. PRs wel
 
 ## Requirements
 
-* SilverStripe CMS ~3.2
-* Fluent ~3.8
+* SilverStripe CMS ^4
+* Fluent ^4
 
 ## Installation
 
@@ -20,7 +20,6 @@ Install the module using composer:
 ```
 composer require innoweb/silverstripe-fluent-rtl-support dev-master
 ```
-or download or git clone the module into a ‘fluent-rtl-support’ directory in your webroot.
 
 Then run dev/build.
 

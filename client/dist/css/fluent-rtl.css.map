@@ -1,0 +1,1 @@
+{"version":3,"sources":["fluent-rtl.scss"],"names":[],"mappings":"AAAA,yEAAA,0EAAA,4EASO,UAAA","file":"fluent-rtl.css","sourcesContent":["html.rtl {\n\t\n\t.field.fluent__localised-field {\n\t\t\n\t\t&:not(.url):not(.urlsegment) {\n\t\t\t\n\t\t\tinput, \n\t\t\ttextarea,\n\t\t\tselect {\n\t\t\t    direction: rtl;\n\t\t\t}\n\t\t}\n\t}\n\t\n}\n"]}

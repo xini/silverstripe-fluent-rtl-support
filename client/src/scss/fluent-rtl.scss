@@ -1,0 +1,15 @@
+html.rtl {
+	
+	.field.fluent__localised-field {
+		
+		&:not(.url):not(.urlsegment) {
+			
+			input, 
+			textarea,
+			select {
+			    direction: rtl;
+			}
+		}
+	}
+	
+}

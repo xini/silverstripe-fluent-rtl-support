@@ -1,6 +1,6 @@
 ---
 Name: fluentrtlsupport
 ---
-LeftAndMain:
+SilverStripe\Admin\LeftAndMain:
   extensions:
-    - FluentRTLLeftAndMain
+    - Innoweb\FluentRTLSupport\Extensions\FluentRTLLeftAndMainExtension
