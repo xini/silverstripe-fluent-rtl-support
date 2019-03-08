@@ -36,9 +36,18 @@
 				// set class on html tag
 				$('html').removeClass('ltr').removeClass('rtl').addClass(dir);
 				// update tinymce config
-				if((typeof tinyMCE != 'undefined') && tinymce.activeEditor != null) {
-					tinymce.activeEditor.directionality = dir;
-					tinymce.activeEditor.getBody().setAttribute('dir', dir);
+				if(typeof tinymce != 'undefined') {
+					for (var i = 0; i < tinymce.editors.length; i++) {
+						var editorInstance = tinymce.editors[i];
+						var textArea = editorInstance.getElement();
+						// check if editor is a localised field
+						if (textArea.classList.contains('fluent__localised-field')) {
+							// add separator
+							// set field direction
+							editorInstance.directionality = dir;
+							editorInstance.getBody().setAttribute('dir', dir);
+						}
+					}
 				}
 			}
 		};
