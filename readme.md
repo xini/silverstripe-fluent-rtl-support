@@ -1,5 +1,7 @@
 # SilverStripe Fluent RTL Support
 
+This module is duplicated from xini/silverstripe-fluent-rtl-support, due to no updates in the last years. This version will allow newer versions of Fluent.
+
 [![Version](http://img.shields.io/packagist/v/innoweb/silverstripe-fluent-rtl-support.svg?style=flat-square)](https://packagist.org/packages/innoweb/silverstripe-fluent-rtl-support)
 [![License](http://img.shields.io/packagist/l/innoweb/silverstripe-fluent-rtl-support.svg?style=flat-square)](license.md)
 
@@ -12,7 +14,7 @@ This is very early stages and only changes the direction of text fields. PRs wel
 ## Requirements
 
 * SilverStripe CMS ^4
-* Fluent ^4
+* Fluent ^4 || ^5
 
 ## Installation
 
