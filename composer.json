@@ -10,7 +10,7 @@
 	}],
 	"require": {
 		"silverstripe/cms": "^4",
-		"tractorcow/silverstripe-fluent": "^4"
+		"tractorcow/silverstripe-fluent": "^4 || ^5"
 	},
 	"autoload": {
 		"psr-4": {
