@@ -12,7 +12,7 @@ This is very early stages and only changes the direction of text fields. PRs wel
 ## Requirements
 
 * SilverStripe CMS ^4
-* Fluent ^4
+* Fluent ^4 or ^5
 
 ## Installation
 
